@@ -1,0 +1,24 @@
+package crud;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public class FilmDAO {
+	public Connection conection;
+	private final MySqlConnection db;
+	
+	
+	public filmDAO (MySqlConnection db) {
+		this.db = db;
+	}
+	
+	public boolean create(FilmModel filme) throws SQLException {
+		Connection connection = db.conection;
+		
+		if (connection == null) {
+			return false;
+		}
+		
+		String cmdQL = "INSERT INTO filmes(codigo, titulo, genero, produtora, dataCompra) VALUES (?, ?, ?, ?, ?)";
+	}
+}

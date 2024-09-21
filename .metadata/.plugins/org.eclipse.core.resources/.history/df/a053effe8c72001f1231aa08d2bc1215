@@ -1,0 +1,25 @@
+package section4_2.regularExpressionExample;
+
+public class RegularExpressionExample {
+	public static void main(String[] args) {
+		String resposta = "sIm";
+		if (getResposta(resposta)) {System.out.println("Esta é uma resposta válida");}
+		else {System.out.println("(" + resposta + ") Esta não é uma resposta válida.");}
+		
+		String palavra = "amar";
+		if (rhymingWord(palavra)) {System.out.println(palavra + " rima com mar.");}
+		else {System.out.println(palavra + " não rima com mar.");}
+	}
+	
+	public static boolean getResposta(String resposta) {
+		return resposta.matches("[Ss]im|[Nn]ão");
+	}
+	
+	public static boolean rhymingWord(String palavra) {
+		return palavra.matches("[a-z]ar");
+	}
+	
+	public static boolean getCPF(String CPF) {
+		return CPF.matches("[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}");
+	}
+}

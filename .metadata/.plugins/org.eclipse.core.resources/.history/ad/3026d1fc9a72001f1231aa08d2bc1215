@@ -1,0 +1,16 @@
+package section4_3;
+
+public class RecursionExample {
+	public static void main(String[] args) {
+		System.out.println(fatorial(5));
+
+	}
+	
+	public static int fatorial(int num) {
+		int result = 0;
+		for (int i = num; i > 0 ; i--) {
+			result = num * (num - 1);
+		}
+		return result;
+	}
+}

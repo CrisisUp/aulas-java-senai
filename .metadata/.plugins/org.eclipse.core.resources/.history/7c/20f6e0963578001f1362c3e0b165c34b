@@ -1,0 +1,13 @@
+package crud;
+
+import java.sql.Connection;
+
+public class FilmDAO {
+	public Connection conection;
+	private final MySqlConnection db;
+	
+	
+	public filmeDAO(MySqlConnection db) {
+		this.db = db;
+	}
+}

@@ -1,0 +1,15 @@
+package crud;
+
+public class FilmView {
+	public static void main(String[] args) {
+		MySqlConnection db = new MySqlConnection();
+		try {
+			if (!db.getConnection()) {
+				System.out.println("Erro ao conectar com o banco de dados");
+				return;
+			}
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}

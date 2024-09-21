@@ -1,0 +1,15 @@
+package crud;
+
+import java.sql.Date;
+
+public class FilmModel {
+	// Properties
+	private String codido;
+	private String titulo;
+	private String genero;
+	private String produtora;
+	private Date dataCompra;
+	
+	// Constructors
+	public FilmModel()
+}
